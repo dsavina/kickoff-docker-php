@@ -1,6 +1,8 @@
 .idea
 .DS_STORE
 /apache/volume
+/apache/crontab
+/apache/php.ini
 /mysql/dumps/*.sql
 /mysql/volume
 .env
