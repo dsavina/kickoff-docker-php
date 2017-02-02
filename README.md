@@ -7,7 +7,7 @@
 
 # Goal
 
-This project will help you to start a PHP project with Docker, thanks to some useful make commands.
+This project will help you to setup a PHP project with Docker, thanks to some useful `make` commands.
 
 # Prerequisites
 
@@ -25,10 +25,13 @@ First, fork this project and clone it or download the tarball using:
 curl -L https://github.com/thecodingmachine/kickoff-docker-php/archive/master.tar.gz > kickoff-docker-php.tar.gz
 ```
 
+You now dispose of a nice docker empty shell, ready to run any classic php/mysql project. Put your sources in `apache/volume` (of course, you can, and you should, make it a git repository, tracking your own project. Parent project ".gitignores" this folder, so who cares?)
+
 Once done, move to the root directory of this project and run:
 
 ```
 cp .env.template .env
+cp apache/php.ini.template php.ini
 ```
 
 Now open the file located at `/etc/hosts` (on MacOS / Linux) and add the following line at the end of the file:
